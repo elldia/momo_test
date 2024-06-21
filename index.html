@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>momo</title>
+    <style>
+        * {box-sizing:border-box; margin:0; padding:0; font-size:1.0em; color:#000; text-decoration:none;}
+        header {display:flex; justify-content: space-between; padding:0 15px; align-items: center; height:60px; position:relative;}
+        header a {text-transform: uppercase; font-weight:600; margin:0 5px;}
+        header a img {width:100%;}
+        header h1 {width:150px; position:absolute; left:50%; transform:translateX(-50%);}
+        main .visual {
+            background:url(./images/visual.gif) center 6%; 
+            background-size:cover;
+            height:350px; width:100%;
+        }
+        main h2 {text-align:center; padding:30px 0; text-transform: capitalize;}
+        main .link {max-width:1400px; margin:0 auto; display:flex;}
+        main .link a img {width:100%;} 
+        @media screen and (max-width:1400px){
+            header .left, header .right {display:none;}
+            main .link {padding:0 15px;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <a href="#">best</a>
+            <a href="#">event</a>
+            <a href="#">모모's pick</a>
+            <a href="#">폰케이스</a>
+            <a href="#">톡</a>
+            <a href="#">에어팟/버즈</a>
+            <a href="#">디지털</a>
+        </div>
+        <h1><a href="#"><img src="./images/logo.png" alt="momo"></a></h1>
+        <div class="right">
+            <a href="#">board</a>
+            <a href="#">login</a>
+            <a href="#">search</a>
+        </div>
+    </header>
+    <main>
+        <div class="visual"></div>
+        <h2>new arrivals</h2>
+        <div class="link">
+            <a href="#"><img src="./images/bnr1.jpeg" alt=""></a>
+        <a href="#"><img src="./images/bnr2.jpeg" alt=""></a>
+        <a href="#"><img src="./images/bnr3.jpeg" alt=""></a>
+        </div>
+    </main>
+</body>
+</html>
